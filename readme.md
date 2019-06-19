@@ -1,6 +1,6 @@
 ## DashBoard Generate CRUD
 
-Caso queira criar um projeto do zero.
+## Caso queira criar um projeto do zero.
 	
 ```
 composer create-project --prefer-dist laravel/laravel nome_do_projeto "5.6.*"
@@ -187,4 +187,16 @@ composer require yajra/laravel-datatables-buttons:^3.0
 Yajra\DataTables\ButtonsServiceProvider::class
 
 php artisan vendor:publish --tag=datatables-buttons --force
+```
+
+## Se for somente baixar o projeto
+
+1. Clone o projeto
+2. Entre na pasta e execute o comando:
+```
+composer install
+```
+3. Crie o banco de dados e rode o comando para gerar as migrates:
+```
+php artisan serve
 ```
