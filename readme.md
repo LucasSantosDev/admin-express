@@ -200,3 +200,9 @@ composer install
 ```
 php artisan serve
 ```
+4. Rode o comando abaixo para publicar alterações importantes:
+```
+php artisan vendor:publish --provider="Yajra\DataTables\DataTablesServiceProvider"
+
+php artisan vendor:publish --tag=datatables-buttons --force
+```
