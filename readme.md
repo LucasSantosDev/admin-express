@@ -150,5 +150,14 @@ Execute o comando:
 ```
 php artisan migrate
 ```
+Execute o comando para baixar a tradução das mensagens do laravel:
+```
+composer require lucascudo/laravel-pt-br-localization
 
+php artisan vendor:publish --tag=laravel-pt-br-localization
+```
 
+Altere config/app.php para:
+```
+'locale' => 'pt-BR',
+```

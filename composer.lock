@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a3c50d3eac6c8a6575bb6a2c7a477260",
+    "content-hash": "da74f8557b91db38dd1751ad880260ea",
     "packages": [
         {
             "name": "appointer/swaggervel",
@@ -1474,6 +1474,46 @@
                 "storage"
             ],
             "time": "2019-06-18T20:09:29+00:00"
+        },
+        {
+            "name": "lucascudo/laravel-pt-br-localization",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lucascudo/laravel-pt-BR-localization.git",
+                "reference": "4ac5ea8d6ccb13e4c51c82f1bf49bf0bfb092bfa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lucascudo/laravel-pt-BR-localization/zipball/4ac5ea8d6ccb13e4c51c82f1bf49bf0bfb092bfa",
+                "reference": "4ac5ea8d6ccb13e4c51c82f1bf49bf0bfb092bfa",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Lucascudo\\LaravelPtBRLocalization\\LaravelPtBRLocalizationServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Lucascudo\\LaravelPtBRLocalization\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Cascudo",
+                    "email": "lucas.sisau@gmail.com"
+                }
+            ],
+            "description": "Arquivos de linguagem em Português do Brasil (pt-BR) para Laravel >= 5.6",
+            "time": "2019-05-12T21:15:34+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -5405,11 +5445,11 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "infyomlabs/laravel-generator": 20,
-        "infyomlabs/adminlte-templates": 20,
-        "infyomlabs/swagger-generator": 20,
         "appointer/swaggervel": 20,
-        "infyomlabs/generator-builder": 20
+        "infyomlabs/adminlte-templates": 20,
+        "infyomlabs/generator-builder": 20,
+        "infyomlabs/laravel-generator": 20,
+        "infyomlabs/swagger-generator": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
