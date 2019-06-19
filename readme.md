@@ -161,3 +161,30 @@ Altere config/app.php para:
 ```
 'locale' => 'pt-BR',
 ```
+
+Execute o comando:
+```
+composer require yajra/laravel-datatables-oracle:"~8.0"
+
+
+'providers' => [
+    ...,
+    Yajra\DataTables\DataTablesServiceProvider::class,
+]
+
+'aliases' => [
+    ...,
+    'DataTables' => Yajra\DataTables\Facades\DataTables::class,
+]
+
+php artisan vendor:publish --provider="Yajra\DataTables\DataTablesServiceProvider"
+```
+
+Execute o comando:
+```
+composer require yajra/laravel-datatables-buttons:^3.0
+
+Yajra\DataTables\ButtonsServiceProvider::class
+
+php artisan vendor:publish --tag=datatables-buttons --force
+```
