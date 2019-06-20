@@ -189,6 +189,17 @@ Yajra\DataTables\ButtonsServiceProvider::class
 php artisan vendor:publish --tag=datatables-buttons --force
 ```
 
+Adicione no arquivo resources/views/layouts/datatables_js.blade.php:
+```
+<script type="text/javascript">
+    $.extend(true, $.fn.dataTable.defaults, {
+        language: {
+            url : 'http://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Portuguese.json'
+        }
+    });
+</script>
+```
+
 ## Se for somente baixar o projeto
 
 1. Clone o projeto

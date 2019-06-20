@@ -171,7 +171,10 @@ return [
 
         Yajra\DataTables\DataTablesServiceProvider::class,
 
-        Yajra\DataTables\ButtonsServiceProvider::class
+        Yajra\DataTables\ButtonsServiceProvider::class,
+
+        Barryvdh\Snappy\ServiceProvider::class,
+
     ],
 
     /*
@@ -226,6 +229,9 @@ return [
         'Flash'     => Laracasts\Flash\Flash::class,
 
         'DataTables' => Yajra\DataTables\Facades\DataTables::class,
+
+        'PDF' => Barryvdh\Snappy\Facades\SnappyPdf::class,
+        'SnappyImage' => Barryvdh\Snappy\Facades\SnappyImage::class,
     ],
 
 ];
